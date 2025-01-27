@@ -213,7 +213,7 @@ To run the Trendify project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/trendify-website.git
+   git clone https://github.com/sudhanshu-j/trendify-website.git
    cd trendify-website
    ```
 
