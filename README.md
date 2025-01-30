@@ -5,6 +5,7 @@ Welcome to the Trendify website repository! This document outlines the structure
 The platform is designed with a focus on user experience, ensuring customers can easily browse products, read detailed descriptions, and proceed to checkout with minimal effort.
 
 ## Table of Contents 📋
+
 1. [Homepage](#homepage)
 
 2. [Offer Page](#offer-page)
