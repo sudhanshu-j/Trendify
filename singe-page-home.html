@@ -1,0 +1,3200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* Style for the 'greyColor' variant label (applies to a product variant with the ID 'greyColor') */
+      .products .varient label[for="greyColor"]::before {
+        background-color: #949087; /* Set the background color of the pseudo-element to a greyish color */
+      }
+
+      /* Style for the 'orangeColor' variant label (applies to a product variant with the ID 'orangeColor') */
+      .products .varient label[for="orangeColor"]::before {
+        background-color: #c38459; /* Set the background color of the pseudo-element to an orange color */
+      }
+
+      /* Style for the 'aquaColor' variant label (applies to a product variant with the ID 'aquaColor') */
+      .products .varient label[for="aquaColor"]::before {
+        background-color: #94c7cb; /* Set the background color of the pseudo-element to an aqua blue color */
+      }
+    </style>
+
+    <!-- ===================== Title Of Web-Page ===================== -->
+
+    <title>Trendify - EHome Decor Products</title>
+
+    <!-- ===================== Remix Icon ===================== -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===================== Swiper Slider ===================== -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ===================== Custom CSS Styles ===================== -->
+
+    <link rel="stylesheet" href="/assets/CSS/styles.css" />
+  </head>
+  <body>
+    <!-- ============================== Hero Section ============================== -->
+
+    <div id="page" class="site single-page">
+      <!-- ============================== Mobile Navigation ============================== -->
+
+      <aside class="site-off desktop-hide">
+        <!-- ===================== Off Canvas Menu ===================== -->
+
+        <div class="off-canvas">
+          <!-- This is the main container for the off-canvas menu. It usually slides in from the side of the screen when triggered. -->
+
+          <div class="canvas-head flex-item">
+            <!-- This is the header section of the off-canvas, likely containing a logo and close button. -->
+
+            <div class="logo">
+              <!-- This div contains the logo of the site or application. -->
+
+              <a href="/index.html">
+                <!-- This is a link (anchor tag) that likely takes the user to the homepage or a section of the site. -->
+
+                <span class="circle"></span>
+                <!-- A span with the class "circle", probably used for styling a circular icon or image next to the logo. -->
+
+                .Trendify
+                <!-- The name of the site or application displayed next to the logo. This could also be part of the branding. -->
+              </a>
+            </div>
+            <!-- End of the logo section. -->
+
+            <a href="#" class="t-close flex-center">
+              <!-- A link styled as a close button, likely used to close the off-canvas menu. -->
+
+              <i class="ri-close-line"></i>
+              <!-- This is an icon from the "remix icon" library (ri-close-line), representing a close action. -->
+            </a>
+          </div>
+          <!-- End of the canvas head section. -->
+
+          <div class="departments"></div>
+          <!-- A div that likely holds links or categories for different departments, but it currently has no content. -->
+
+          <nav></nav>
+          <!-- A navigation container, but it is empty for now. It would typically contain links for navigating between different pages or sections. -->
+
+          <div class="theTop-nav"></div>
+          <!-- A container for additional navigation or elements that appear at the top of the off-canvas. It is empty for now. -->
+        </div>
+        <!-- End of the off-canvas menu. -->
+      </aside>
+
+      <!-- ============================== Header Section ============================== -->
+
+      <header>
+        <!-- ===================== Top Navigation ===================== -->
+
+        <div class="header-top mobile-hide">
+          <!-- This is the top header section that is hidden on mobile devices (due to the class "mobile-hide"). -->
+
+          <div class="container">
+            <!-- The container ensures proper alignment and spacing of content inside it, typically used for responsiveness. -->
+
+            <div class="wrapper flex-item">
+              <!-- The wrapper holds the elements in a flexbox layout, with "flex-item" ensuring that they are flex children. -->
+
+              <div class="left">
+                <!-- The left section, which will contain items aligned to the left side. -->
+
+                <ul class="flex-item main-links">
+                  <!-- An unordered list that holds the main navigation links on the left side of the header. -->
+
+                  <li><a href="#">Blog</a></li>
+                  <!-- A list item with a link to the "Blog" page. -->
+
+                  <li><a href="#"> Featured Products </a></li>
+                  <!-- A list item with a link to the "Featured Products" page. -->
+
+                  <li><a href="#">Wishlist</a></li>
+                  <!-- A list item with a link to the "Wishlist" page. -->
+                </ul>
+              </div>
+              <!-- End of the left section. -->
+
+              <div class="right">
+                <!-- The right section, which will contain items aligned to the right side. -->
+
+                <ul class="flex-item main-links">
+                  <!-- Another unordered list that holds main navigation links for the right section of the header. -->
+
+                  <li><a href="#">Sign Up</a></li>
+                  <!-- A list item with a link to the "Sign Up" page. -->
+
+                  <li><a href="#">My Account</a></li>
+                  <!-- A list item with a link to the "My Account" page. -->
+
+                  <li><a href="#">Order History</a></li>
+                  <!-- A list item with a link to the "Order History" page. -->
+
+                  <li>
+                    <a href="#">
+                      <!-- A list item containing a dropdown menu for selecting currency. -->
+
+                      USD
+                      <span class="small-icon">
+                        <i class="ri-arrow-down-s-line"></i>
+                      </span>
+                      <!-- The text for USD, along with an icon (using Remix Icon) indicating a dropdown. -->
+                    </a>
+
+                    <ul class="dropdown">
+                      <!-- A dropdown menu listing different currencies. -->
+
+                      <li class="current"><a href="#">USD</a></li>
+                      <!-- A list item with the current currency (USD). -->
+
+                      <li><a href="#">INR</a></li>
+                      <!-- A list item for Indian Rupee (INR). -->
+
+                      <li><a href="#">GBP</a></li>
+                      <!-- A list item for British Pound (GBP). -->
+
+                      <li><a href="#">JPY</a></li>
+                      <!-- A list item for Japanese Yen (JPY). -->
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <!-- A list item containing a dropdown menu for selecting language. -->
+
+                      English
+                      <span class="small-icon">
+                        <i class="ri-arrow-down-s-line"></i>
+                      </span>
+                      <!-- The text for the current language (English), along with a dropdown icon. -->
+                    </a>
+
+                    <ul class="dropdown">
+                      <!-- A dropdown menu listing different languages. -->
+
+                      <li class="current"><a href="#">English</a></li>
+                      <!-- A list item with the current language (English). -->
+
+                      <li><a href="#">Hindi</a></li>
+                      <!-- A list item for Hindi language. -->
+
+                      <li><a href="#">German</a></li>
+                      <!-- A list item for German language. -->
+
+                      <li><a href="#">Spanish</a></li>
+                      <!-- A list item for Spanish language. -->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- End of the right section. -->
+            </div>
+            <!-- End of the wrapper that houses the left and right sections. -->
+          </div>
+          <!-- End of the container. -->
+        </div>
+        <!-- End of the header-top section. -->
+
+        <!-- ===================== Header Navigation ===================== -->
+
+        <div class="header-nav">
+          <!-- Main navigation container -->
+          <div class="container">
+            <!-- A container for centering the content and applying layout restrictions -->
+            <div class="wrapper flex-item">
+              <!-- Wrapper for arranging elements, using flexbox for layout -->
+
+              <!-- Mobile menu toggle button (appears on mobile view, hidden on desktop) -->
+              <a href="#" class="trigger desktop-hide">
+                <i class="ri-menu-fill"></i>
+                <!-- Icon inside the toggle button (menu icon) -->
+              </a>
+
+              <div class="left flex-item">
+                <!-- Left section of the header, using flex layout -->
+                <div class="logo">
+                  <!-- Logo section that contains the brand name or logo -->
+                  <a href="/index.html">
+                    <!-- Link wrapping the logo, it leads to the homepage -->
+                    <span class="circle"></span>
+                    <!-- Circular element inside the logo (possibly part of the design) -->
+                    .Trendify
+                    <!-- The brand name, appearing next to the circle -->
+                  </a>
+                </div>
+                <!-- End of logo section -->
+
+                <nav class="mobile-hide">
+                  <!-- Navigation menu that is hidden on mobile devices -->
+                  <ul class="flex-item second-links">
+                    <!-- Unordered list for the navigation links -->
+
+                    <!-- Home link -->
+                    <li><a href="/index.html"> Home </a></li>
+
+                    <!-- Shop link -->
+                    <li><a href="/offer-page.html"> Shop </a></li>
+
+                    <!-- Dropdown menu for Women category -->
+                    <li class="has-child">
+                      <a href="/category-page.html">
+                        <!-- Link for Women category -->
+                        Women
+                        <span class="small-icon">
+                          <!-- Arrow icon to indicate dropdown -->
+                          <i class="ri-arrow-down-s-line"></i>
+                        </span>
+                      </a>
+
+                      <!-- Mega menu for Women category -->
+                      <div class="mega">
+                        <div class="container">
+                          <div class="wrapper">
+                            <!-- Women's Clothing Section -->
+                            <div class="flex-column">
+                              <div class="row">
+                                <h4>Women's Clothings</h4>
+                                <ul>
+                                  <!-- List of women's clothing items -->
+                                  <li><a href="#"> Dresses </a></li>
+                                  <li><a href="#"> Tops &amp; Skirts </a></li>
+                                  <li><a href="#"> Jacket &amp; Coats </a></li>
+                                  <li><a href="#"> Pants &amp; Shorts </a></li>
+                                  <li><a href="#"> Swimwear </a></li>
+                                  <li>
+                                    <a href="#"> T-Shirts &amp; Blouses </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> Hoodies &amp; Sweatshirts </a>
+                                  </li>
+                                  <li><a href="#"> Socks &amp; Hats </a></li>
+                                  <li>
+                                    <a href="#"> Tights &amp; Leggings </a>
+                                  </li>
+                                  <li><a href="#"> Belts &amp; Scarves </a></li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <!-- Jewellery Collections Section -->
+                            <div class="flex-column">
+                              <div class="row">
+                                <h4>Jewellery Collections</h4>
+                                <ul>
+                                  <!-- List of jewellery items -->
+                                  <li><a href="#"> Earrings </a></li>
+                                  <li><a href="#"> Necklaces </a></li>
+                                  <li><a href="#"> Rings </a></li>
+                                  <li><a href="#"> Bracelets </a></li>
+                                  <li><a href="#"> Cufflinks </a></li>
+                                  <li><a href="#"> Anklets </a></li>
+                                  <li><a href="#"> Pendants </a></li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <!-- Beauty Products Section -->
+                            <div class="flex-column">
+                              <div class="row">
+                                <h4>Beauty Products</h4>
+                                <ul>
+                                  <!-- List of beauty products -->
+                                  <li>
+                                    <a href="#"> Makeup &amp; Cosmetics </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> Hair &amp; Skin Care </a>
+                                  </li>
+                                  <li><a href="#"> Skincare &amp; Bath </a></li>
+                                  <li>
+                                    <a href="#"> Fragrances &amp; Perfumes </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> Spa Kits &amp; Gifts </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> Soap &amp; Bath Bombs </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Essential &amp; Alternative
+                                    </a>
+                                  </li>
+                                  <li><a href="#"> Hair Accessories </a></li>
+                                  <li><a href="#"> Nail Care </a></li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <!-- Top Brands Section -->
+                            <div class="flex-column">
+                              <div class="row">
+                                <h4>Top Brands</h4>
+                                <ul class="women-brands">
+                                  <!-- List of brands -->
+                                  <li><a href="#"> Nike </a></li>
+                                  <li><a href="#"> Adidas </a></li>
+                                  <li><a href="#"> Gucci </a></li>
+                                  <li><a href="#"> Louis Vuitton </a></li>
+                                  <li><a href="#"> Chanel </a></li>
+                                  <li><a href="#"> Prada </a></li>
+                                  <li><a href="#"> Fendi </a></li>
+                                  <li><a href="#"> Versace </a></li>
+                                  <li><a href="#"> Dolce &amp; Gabbana </a></li>
+                                  <li><a href="#"> Armani </a></li>
+                                  <li><a href="#"> Burberry </a></li>
+                                </ul>
+
+                                <!-- View All Brands Link -->
+                                <a href="#" class="view-all">
+                                  View All Brands
+                                  <i class="ri-arrow-right-line"></i>
+                                  <!-- Arrow icon for view all brands -->
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- Featured Product Section -->
+                            <div class="flex-column products">
+                              <div class="row">
+                                <div class="media">
+                                  <div class="thumbnail obj-cover">
+                                    <!-- Product image container -->
+                                    <a href="#">
+                                      <img
+                                        src="/assets/products/dress/dress-10.jpg"
+                                        alt="Image"
+                                      />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="text-content">
+                                  <!-- Product description section -->
+                                  <h4>Most popular product</h4>
+                                  <a href="#" class="primary-btn">
+                                    <!-- Button to order the product -->
+                                    Order Now
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- Men link -->
+                    <li><a href="#"> Men </a></li>
+
+                    <!-- Accessories link with 'New!' label -->
+                    <li>
+                      <a href="#">
+                        Accessories
+                        <div class="fly-item">
+                          <!-- 'New!' label -->
+                          <span> New! </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- End of the left flex item -->
+
+              <div class="right">
+                <!-- Right section of the header, possibly containing icons like favorites and cart -->
+                <ul class="flex-item second-links">
+                  <!-- Unordered list for the right-side links -->
+
+                  <!-- Favorites link (visible on desktop) -->
+                  <li class="mobile-hide">
+                    <a href="#">
+                      <div class="large-icon">
+                        <!-- Container for the icon -->
+                        <i class="ri-heart-line"></i>
+                        <!-- Heart icon for favorites -->
+                      </div>
+
+                      <!-- Indicator for the number of items in favorites -->
+                      <div class="fly-item">
+                        <span class="item-number">0</span>
+                        <!-- Number of items in the favorites (currently 0) -->
+                      </div>
+                    </a>
+                  </li>
+
+                  <!-- Cart link -->
+                  <li class="cart-link">
+                    <a href="/cart.html">
+                      <!-- Link to the cart page -->
+                      <div class="large-icon">
+                        <!-- Container for the cart icon -->
+                        <i class="ri-shopping-cart-line"></i>
+                        <!-- Cart icon -->
+
+                        <!-- Indicator for the number of items in the cart -->
+                        <div class="fly-item">
+                          <span class="item-number">5</span>
+                          <!-- Number of items in the cart (currently 5) -->
+                        </div>
+                      </div>
+
+                      <!-- Cart text description (shows total value) -->
+                      <div class="icon-text">
+                        <div class="mini-text">Total</div>
+                        <!-- Label for the total value -->
+                        <div class="cart-total">$3,105.00</div>
+                        <!-- Total value of items in the cart -->
+                      </div>
+                    </a>
+
+                    <!-- Mini cart (shows a preview of the items in the cart) -->
+                    <div class="mini-cart">
+                      <div class="content">
+                        <div class="cart-head">5 Items In Cart</div>
+                        <!-- Header showing number of items in the cart -->
+
+                        <!-- Cart body containing the list of products -->
+                        <div class="cart-body">
+                          <ul class="products mini">
+                            <!-- List of products in the cart -->
+
+                            <!-- Product 1 -->
+                            <li class="item">
+                              <div class="thumbnail obj-cover">
+                                <!-- Product thumbnail -->
+                                <a href="#">
+                                  <img
+                                    src="/assets/products/home2.jpg"
+                                    alt="Image"
+                                  />
+                                  <!-- Product image -->
+                                </a>
+                              </div>
+
+                              <div class="item-content">
+                                <p>
+                                  <a href="#"
+                                    >Modern &amp; Stylist Ceiling Light (Home
+                                    Decor)</a
+                                  >
+                                  <!-- Product name -->
+                                </p>
+
+                                <!-- Product price and quantity -->
+                                <span class="price">
+                                  <span>$120.00</span>
+                                  <!-- Product price -->
+                                  <span class="fly-item">2x</span>
+                                  <!-- Quantity (2 of this item) -->
+                                </span>
+                              </div>
+
+                              <!-- Remove item from the cart -->
+                              <a href="" class="item-remove">
+                                <i class="ri-close-line"></i>
+                                <!-- Remove icon -->
+                              </a>
+                            </li>
+
+                            <!-- Product 2 -->
+                            <li class="item">
+                              <div class="thumbnail obj-cover">
+                                <a href="#">
+                                  <img
+                                    src="/assets/products/home1.jpg"
+                                    alt="Image"
+                                  />
+                                </a>
+                              </div>
+
+                              <div class="item-content">
+                                <p>
+                                  <a href="#"
+                                    >Soft & Comfy Velvet Sofa (Home Decor)</a
+                                  >
+                                </p>
+                                <span class="price">
+                                  <span>$580.00</span>
+                                  <span class="fly-item">1x</span>
+                                </span>
+                              </div>
+
+                              <a href="#" class="item-remove">
+                                <i class="ri-close-line"></i>
+                              </a>
+                            </li>
+
+                            <!-- Product 3 -->
+                            <li class="item">
+                              <div class="thumbnail obj-cover">
+                                <a href="#">
+                                  <img
+                                    src="/assets/products/shoe5.jpg"
+                                    alt="Image"
+                                  />
+                                </a>
+                              </div>
+
+                              <div class="item-content">
+                                <p>
+                                  <a href="#"
+                                    >Nike Air Jordan 1 Legacy - Black Edition
+                                    (Fashion)</a
+                                  >
+                                </p>
+                                <span class="price">
+                                  <span>$1,120.00</span>
+                                  <span class="fly-item">1x</span>
+                                </span>
+                              </div>
+
+                              <a href="#" class="item-remove">
+                                <i class="ri-close-line"></i>
+                              </a>
+                            </li>
+
+                            <!-- Product 4 -->
+                            <li class="item">
+                              <div class="thumbnail obj-cover">
+                                <a href="#">
+                                  <img
+                                    src="/assets/products/electronic3.jpg"
+                                    alt="Image"
+                                  />
+                                </a>
+                              </div>
+
+                              <div class="item-content">
+                                <p>
+                                  <a href="#"
+                                    >Lenovo Wireless Gaming Headphones
+                                    (Gadgets)</a
+                                  >
+                                </p>
+                                <span class="price">
+                                  <span>$320.00</span>
+                                  <span class="fly-item">2x</span>
+                                </span>
+                              </div>
+
+                              <a href="#" class="item-remove">
+                                <i class="ri-close-line"></i>
+                              </a>
+                            </li>
+
+                            <!-- Product 5 -->
+                            <li class="item">
+                              <div class="thumbnail obj-cover">
+                                <a href="#">
+                                  <img
+                                    src="/assets/products/home5.jpg"
+                                    alt="Image"
+                                  />
+                                </a>
+                              </div>
+
+                              <div class="item-content">
+                                <p>
+                                  <a href="#"
+                                    >Modern & Comfy Couple's Double Bed (Home
+                                    Decor)</a
+                                  >
+                                </p>
+                                <span class="price">
+                                  <span>$750.00</span>
+                                  <span class="fly-item">1x</span>
+                                </span>
+                              </div>
+
+                              <a href="#" class="item-remove">
+                                <i class="ri-close-line"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Cart footer showing the subtotal and actions -->
+                        <div class="cart-footer">
+                          <div class="sub-total">
+                            <p>SubTotal:</p>
+                            <p>
+                              <strong>$3,105.00</strong>
+                              <!-- Total subtotal value -->
+                            </p>
+                          </div>
+
+                          <!-- Cart actions (checkout and view cart links) -->
+                          <div class="actions">
+                            <a href="/checkout.html" class="primary-btn"
+                              >Checkout</a
+                            >
+                            <!-- Checkout button -->
+                            <a href="/cart.html" class="secondary-btn"
+                              >View Cart</a
+                            >
+                            <!-- View Cart button -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End of wrapper -->
+          </div>
+          <!-- End of container -->
+        </div>
+        <!-- End of header-nav -->
+
+        <!-- ===================== Main Header Navigation ===================== -->
+
+        <div class="header-main mobile-hide">
+          <!-- Main header section that is hidden on mobile devices -->
+          <div class="container">
+            <!-- Container for the content, typically for centering and controlling layout -->
+            <div class="wrapper flex-item">
+              <!-- Wrapper to arrange elements using flexbox -->
+
+              <div class="left">
+                <!-- Left-aligned content section -->
+
+                <!-- Dropdown menu for departments -->
+                <div class="dpt-cate">
+                  <!-- Department header -->
+                  <div class="dpt-head">
+                    <!-- Main text that displays the title 'All Departments' -->
+                    <div class="main-text">All Departments</div>
+
+                    <!-- Subtext showing the total number of products available, hidden on mobile -->
+                    <div class="mini-text mobile-hide">
+                      Total 1529 products available
+                    </div>
+
+                    <!-- Dropdown trigger (hidden on mobile), clicking this would open the department menu -->
+                    <a href="#" class="dpt-trigger mobile-hide">
+                      <i class="ri-menu-3-fill ri-xl"></i>
+                      <!-- Menu icon (three horizontal lines) indicating the dropdown -->
+
+                      <!-- close -->
+                      <i class="ri-close-line ri-xl"></i>
+                    </a>
+                  </div>
+
+                  <div class="dpt-menu">
+                    <!-- Department menu section -->
+                    <ul class="second-links">
+                      <!-- List of department categories -->
+
+                      <!-- Beauty Department with dropdown -->
+                      <li class="has-child beauty">
+                        <a href="#">
+                          <!-- Link for Beauty category -->
+                          <div class="large-icon">
+                            <i class="ri-bear-smile-line"></i>
+                            <!-- Icon representing Beauty (smiley face) -->
+                          </div>
+                          Beauty
+                          <!-- Category name -->
+                          <div class="small-icon">
+                            <i class="ri-arrow-right-s-line"></i>
+                            <!-- Icon indicating a dropdown or next page -->
+                          </div>
+                        </a>
+
+                        <!-- Dropdown items for Beauty category -->
+                        <ul>
+                          <li><a href="#"> Makeup &amp; Cosmetics </a></li>
+                          <li><a href="#"> Hair &amp; Skin Care </a></li>
+                          <li><a href="#"> Soap &amp; Bath Bomb </a></li>
+                          <li><a href="#"> Essential &amp; Alternative </a></li>
+                          <li><a href="#"> Fragrance &amp; Perfumes </a></li>
+                          <li><a href="#"> Grooming kits &amp; Gifts </a></li>
+                          <li><a href="#"> Personal Care </a></li>
+                          <li><a href="#"> Hair Accessories </a></li>
+                        </ul>
+                      </li>
+
+                      <!-- Electronics Department with dropdown -->
+                      <li class="has-child electronics">
+                        <a href="#">
+                          <!-- Link for Electronics category -->
+                          <div class="large-icon">
+                            <i class="ri-macbook-line"></i>
+                            <!-- Icon representing Electronics (laptop) -->
+                          </div>
+                          Electronics
+                          <!-- Category name -->
+                          <div class="small-icon">
+                            <i class="ri-arrow-right-s-line"></i>
+                            <!-- Icon indicating a dropdown or next page -->
+                          </div>
+                        </a>
+
+                        <!-- Dropdown items for Electronics category -->
+                        <ul>
+                          <li><a href="#"> Mobile Phones </a></li>
+                          <li><a href="#"> Tablets </a></li>
+                          <li><a href="#"> Laptops </a></li>
+                          <li><a href="#"> Desktops </a></li>
+                          <li><a href="#"> Gaming Consoles </a></li>
+                          <li><a href="#"> Accessories </a></li>
+                          <li><a href="#"> Home Electronics </a></li>
+                          <li><a href="#"> Home Audio &amp; Speakers </a></li>
+                          <li><a href="#"> Home Entertainment </a></li>
+                        </ul>
+                      </li>
+
+                      <!-- Women's Fashion Department with dropdown -->
+                      <li class="has-child fashion">
+                        <a href="#">
+                          <!-- Link for Women's Fashion category -->
+                          <div class="large-icon">
+                            <i class="ri-women-line"></i>
+                            <!-- Icon representing Women's Fashion -->
+                          </div>
+                          Women's fashion
+                          <!-- Category name -->
+                          <div class="small-icon">
+                            <i class="ri-arrow-right-s-line"></i>
+                            <!-- Icon indicating a dropdown or next page -->
+                          </div>
+                        </a>
+
+                        <!-- Dropdown items for Women's Fashion category -->
+                        <ul>
+                          <li><a href="#"> Clothing </a></li>
+                          <li><a href="#"> Shoes </a></li>
+                          <li><a href="#"> Jewelry </a></li>
+                          <li><a href="#"> Accessories </a></li>
+                          <li><a href="#"> Watches </a></li>
+                          <li><a href="#"> Bags &amp; Wallets </a></li>
+                          <li><a href="#"> Home &amp; Garden </a></li>
+                          <li><a href="#"> Furniture </a></li>
+                          <li><a href="#"> Luggage &amp; Travel </a></li>
+                        </ul>
+                      </li>
+
+                      <!-- Men's Fashion Department (no dropdown) -->
+                      <li class="fashion-2">
+                        <a href="#">
+                          <!-- Link for Men's Fashion category -->
+                          <div class="large-icon">
+                            <i class="ri-shirt-line"></i>
+                            <!-- Icon representing Men's Fashion (shirt) -->
+                          </div>
+                          Men's fashion
+                          <!-- Category name -->
+                        </a>
+                      </li>
+
+                      <!-- Health and Beauty category (no dropdown) -->
+                      <li class="health-and-beauty">
+                        <a href="#">
+                          <!-- Link for Health & Beauty category -->
+                          <div class="large-icon">
+                            <i class="ri-heart-add-line"></i>
+                            <!-- Icon representing Health & Beauty -->
+                          </div>
+                          Health &amp; Beauty
+                          <!-- Category name -->
+                        </a>
+                      </li>
+
+                      <!-- Sports and Outdoors category (no dropdown) -->
+                      <li class="sports-and-outdoors">
+                        <a href="#">
+                          <!-- Link for Sports & Outdoors category -->
+                          <div class="large-icon">
+                            <i class="ri-basketball-line"></i>
+                            <!-- Icon representing Sports & Outdoors -->
+                          </div>
+                          Sports &amp; Outdoors
+                          <!-- Category name -->
+                        </a>
+                      </li>
+
+                      <!-- Crafts and Hobbies category (no dropdown) -->
+                      <li class="crafts-and-hobbies">
+                        <a href="#">
+                          <!-- Link for Crafts & Hobbies category -->
+                          <div class="large-icon">
+                            <i class="ri-palette-line"></i>
+                            <!-- Icon representing Crafts & Hobbies -->
+                          </div>
+                          Crafts &amp; Hobbies
+                          <!-- Category name -->
+                        </a>
+                      </li>
+
+                      <!-- Home & Kitchen Department with dropdown -->
+                      <li class="has-child home-and-kitchen">
+                        <a href="#">
+                          <!-- Link for Home & Kitchen category -->
+                          <div class="large-icon">
+                            <i class="ri-home-line"></i>
+                            <!-- Icon representing Home & Kitchen -->
+                          </div>
+                          Home &amp; Kitchen
+                          <!-- Category name -->
+                          <div class="small-icon">
+                            <i class="ri-arrow-right-s-line"></i>
+                            <!-- Icon indicating a dropdown or next page -->
+                          </div>
+                        </a>
+
+                        <!-- Mega menu for Home & Kitchen category -->
+                        <div class="mega">
+                          <!-- Kitchen & Dining section in the mega menu -->
+                          <div class="flex-column">
+                            <div class="row">
+                              <h4><a href="#"> Kitchen &amp; Dining </a></h4>
+                              <ul>
+                                <li>
+                                  <a href="#"> Cookware &amp; Utensils </a>
+                                </li>
+                                <li><a href="#"> Kitchen Appliances </a></li>
+                                <li><a href="#"> Kitchen Accessories </a></li>
+                                <li><a href="#"> Baking &amp; Pastry </a></li>
+                                <li>
+                                  <a href="#">
+                                    Cooking Ingredients &amp; Tools
+                                  </a>
+                                </li>
+                                <li><a href="#"> Food &amp; Beverages </a></li>
+                                <li>
+                                  <a href="#">
+                                    Cooking Techniques &amp; Recipes
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <!-- Home Decor section in the mega menu -->
+                            <div class="row">
+                              <h4><a href="#"> Home Decor </a></h4>
+                              <ul>
+                                <li><a href="#"> Bedroom &amp; Bath </a></li>
+                                <li><a href="#"> Living Room &amp; Bed </a></li>
+                                <li><a href="#"> Kitchen &amp; Dining </a></li>
+                                <li>
+                                  <a href="#"> Office &amp; Home Office </a>
+                                </li>
+                                <li><a href="#"> Decor &amp; Furniture </a></li>
+                                <li><a href="#"> Wall Art &amp; Design </a></li>
+                                <li>
+                                  <a href="#">
+                                    Home Theater &amp; Entertainment
+                                  </a>
+                                </li>
+                                <li><a href="#"> Sustainable Home </a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Additional sections in the mega menu -->
+                          <div class="flex-column">
+                            <!-- Bed & Bath section in the mega menu -->
+                            <div class="row">
+                              <h4><a href="#"> Bed & Bath </a></h4>
+                              <ul>
+                                <li><a href="#"> Bedding </a></li>
+                                <li>
+                                  <a href="#"> Bathroom &amp; Kitchen Items </a>
+                                </li>
+                                <li><a href="#"> Bedding Accessories </a></li>
+                                <li><a href="#"> Curtains &amp; Blinds </a></li>
+                                <li>
+                                  <a href="#"> Flooring &amp; Carpets </a>
+                                </li>
+                                <li>
+                                  <a href="#"> Rugs &amp; Throw Pillows </a>
+                                </li>
+                                <li><a href="#"> Sofas &amp; Loveseats </a></li>
+                                <li><a href="#"> Window Treatments </a></li>
+                              </ul>
+                            </div>
+
+                            <!-- Utility section in the mega menu -->
+                            <div class="row">
+                              <h4><a href="#"> Utility </a></h4>
+                              <ul>
+                                <li>
+                                  <a href="#"> Gutters &amp; Driveways </a>
+                                </li>
+                                <li>
+                                  <a href="#"> Plumbing &amp; Heating </a>
+                                </li>
+                                <li>
+                                  <a href="#"> Electrical &amp; Lighting </a>
+                                </li>
+                                <li><a href="#"> Home Security </a></li>
+                                <li>
+                                  <a href="#"> Appliances &amp; Repair </a>
+                                </li>
+                                <li><a href="#"> Tools &amp; Hardware </a></li>
+                                <li>
+                                  <a href="#"> Painting &amp; Decorating </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    Home Inspection &amp; Maintenance
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="flex-column">
+                            <!-- Row for Outdoor category menu -->
+                            <div class="row">
+                              <!-- Heading for Outdoor category -->
+                              <h4><a href="#">Outdoor</a></h4>
+
+                              <!-- Unordered list for Outdoor subcategories -->
+                              <ul>
+                                <!-- List item for Outdoor Gear & Accessories -->
+                                <li>
+                                  <a href="#">Outdoor Gear &amp; Accessories</a>
+                                </li>
+                                <!-- List item for Outdoor Furniture -->
+                                <li><a href="#">Outdoor Furniture</a></li>
+                                <!-- List item for Outdoor Decor -->
+                                <li><a href="#">Outdoor Decor</a></li>
+                                <!-- List item for Outdoor Sports & Recreation -->
+                                <li>
+                                  <a href="#"
+                                    >Outdoor Sports &amp; Recreation</a
+                                  >
+                                </li>
+                                <!-- List item for Outdoor Plants & Flowers -->
+                                <li>
+                                  <a href="#">Outdoor Plants &amp; Flowers</a>
+                                </li>
+                                <!-- List item for Outdoor Events & Attractions -->
+                                <li>
+                                  <a href="#"
+                                    >Outdoor Events &amp; Attractions</a
+                                  >
+                                </li>
+                                <!-- List item for Outdoor Weather & Climate -->
+                                <li>
+                                  <a href="#">Outdoor Weather &amp; Climate</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <!-- Travel & Adventure category -->
+                      <li class="travel-and-adventure">
+                        <a href="#">
+                          <!-- Icon for Travel & Adventure -->
+                          <div class="large-icon">
+                            <i class="ri-map-pin-line"></i>
+                          </div>
+                          <!-- Travel & Adventure text -->
+                          Travel &amp; Adventure
+                        </a>
+                      </li>
+
+                      <!-- Automotive category -->
+                      <li class="automotive">
+                        <a href="#">
+                          <!-- Icon for Automotive -->
+                          <div class="large-icon">
+                            <i class="ri-car-line"></i>
+                          </div>
+                          <!-- Automotive text -->
+                          Automotive
+                        </a>
+                      </li>
+
+                      <!-- Best Seller category -->
+                      <li class="bestseller">
+                        <a href="#">
+                          <!-- Icon for Best Seller -->
+                          <div class="large-icon">
+                            <i class="ri-trophy-line"></i>
+                          </div>
+                          <!-- Best Seller text -->
+                          Best Seller
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Search box section (right side) -->
+              <div class="right">
+                <div class="search-box">
+                  <form action="" class="search">
+                    <!-- Search icon for the search input field -->
+                    <span class="large-icon">
+                      <i class="ri-search-line"></i>
+                    </span>
+                    <!-- Input field for searching products -->
+                    <input type="search" placeholder="Search Products" />
+
+                    <!-- Search button with icon -->
+                    <button type="submit">
+                      Search
+                      <i class="ri-search-line"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============================== Main Section ============================== -->
+
+      <main>
+        <!-- ===================== Single Product ===================== -->
+
+        <div class="single-product">
+          <!-- Container for the single product page -->
+          <div class="container">
+            <!-- Main container for content -->
+            <div class="wrapper">
+              <!-- Wrapper element to group the content -->
+
+              <div class="breadCrumb">
+                <!-- Breadcrumb navigation section -->
+                <ul class="flex-item">
+                  <!-- Unordered list for breadcrumb items -->
+
+                  <li>
+                    <!-- First breadcrumb item (Home) -->
+                    <a href="#">
+                      <!-- Link to home page -->
+                      <i class="ri-home-line"></i>
+                      <!-- Icon representing the home link -->
+                      Home
+                      <!-- Text label for the breadcrumb item -->
+                    </a>
+                  </li>
+
+                  <li>
+                    <!-- Second breadcrumb item (Shoes) -->
+                    <a href="#">
+                      <!-- Link to shoes category page -->
+                      <i class="ri-footprint-line"></i>
+                      <!-- Icon representing the shoes link -->
+                      Decor
+                      <!-- Text label for the breadcrumb item -->
+                    </a>
+                  </li>
+
+                  <li>
+                    <!-- Third breadcrumb item (Product page) -->
+                    <a href="#">
+                      <!-- Link to the product page (in this case, the sofa page) -->
+                      <i class="ri-barcode-line"></i>
+                      <!-- Icon representing the product link -->
+                      Lemon - Loveseat Sofa
+                      <!-- Text label for the breadcrumb item (Product Name) -->
+                    </a>
+                  </li>
+                </ul>
+                <!-- End of unordered list -->
+              </div>
+              <!-- End of breadcrumb section -->
+
+              <!-- Column -->
+              <div class="column">
+                <!-- A container for a single product item -->
+                <div class="products one">
+                  <!-- The product container with a specific class -->
+                  <div class="flex-wrap">
+                    <!-- A wrapper for flex-based layout -->
+
+                    <!-- Big/Small Image -->
+                    <div class="row">
+                      <!-- Row for the product image section -->
+                      <div class="item is_sticky">
+                        <!-- Product item with sticky behavior (likely for fixed position) -->
+
+                        <!-- Discount Banner -->
+                        <div class="price">
+                          <!-- Price section for displaying discount -->
+                          <span class="discount">
+                            20% <br />
+                            <!-- Discount label with percentage -->
+                            OFF
+                            <!-- Text indicating discount -->
+                          </span>
+                        </div>
+
+                        <!-- Big Image Section (Main image carousel) -->
+                        <div class="big-img big-img-swiper">
+                          <!-- Container for big image carousel -->
+                          <div class="big-img-wrapper swiper-wrapper">
+                            <!-- Wrapper for all the big images -->
+
+                            <!-- Image 1 -->
+                            <div class="img-show swiper-slide">
+                              <!-- First image slide -->
+                              <a
+                                data-fslightbox
+                                href="/assets/products/home-decor/home-decor-1.jpg"
+                              >
+                                <!-- Link to open the image in lightbox -->
+                                <img
+                                  src="/assets/products/home-decor/home-decor-1.jpg"
+                                  alt="Shoes Image"
+                                />
+                                <!-- Image for the product -->
+                              </a>
+                            </div>
+
+                            <!-- Image 2 -->
+                            <div class="img-show swiper-slide">
+                              <!-- Second image slide -->
+                              <a
+                                data-fslightbox
+                                href="/assets/products/home-decor/home-decor-2.jpg"
+                              >
+                                <!-- Link to open the image in lightbox -->
+                                <img
+                                  src="/assets/products/home-decor/home-decor-2.jpg"
+                                  alt="Shoes Image"
+                                />
+                                <!-- Image for the product -->
+                              </a>
+                            </div>
+
+                            <!-- Image 3 -->
+                            <div class="img-show swiper-slide">
+                              <!-- Third image slide -->
+                              <a
+                                data-fslightbox
+                                href="/assets/products/home-decor/home-decor-3.jpg"
+                              >
+                                <!-- Link to open the image in lightbox -->
+                                <img
+                                  src="/assets/products/home-decor/home-decor-3.jpg"
+                                  alt="Shoes Image"
+                                />
+                                <!-- Image for the product -->
+                              </a>
+                            </div>
+
+                            <!-- Image 4 -->
+                            <div class="img-show swiper-slide">
+                              <!-- Fourth image slide -->
+                              <a
+                                data-fslightbox
+                                href="/assets/products/home-decor/home-decor-4.png"
+                              >
+                                <!-- Link to open the image in lightbox -->
+                                <img
+                                  src="/assets/products/home-decor/home-decor-4.png"
+                                  alt="Shoes Image"
+                                />
+                                <!-- Image for the product -->
+                              </a>
+                            </div>
+
+                            <!-- Image 5 -->
+                            <div class="img-show swiper-slide">
+                              <!-- Fifth image slide -->
+                              <a
+                                data-fslightbox
+                                href="/assets/products/home-decor/home-decor-5.png"
+                              >
+                                <!-- Link to open the image in lightbox -->
+                                <img
+                                  src="/assets/products/home-decor/home-decor-5.png"
+                                  alt="Shoes Image"
+                                />
+                                <!-- Image for the product -->
+                              </a>
+                            </div>
+
+                            <!-- Image 6 -->
+                            <div class="img-show swiper-slide">
+                              <!-- Sixth image slide -->
+                              <a
+                                data-fslightbox
+                                href="/assets/products/home-decor/home-decor-6.jpg"
+                              >
+                                <!-- Link to open the image in lightbox -->
+                                <img
+                                  src="/assets/products/home-decor/home-decor-6.jpg"
+                                  alt="Shoes Image"
+                                />
+                                <!-- Image for the product -->
+                              </a>
+                            </div>
+                          </div>
+
+                          <!-- Swiper Pagination (for image navigation buttons) -->
+                          <div class="swiper-button-next"></div>
+                          <!-- Button for next image -->
+                          <div class="swiper-button-prev"></div>
+                          <!-- Button for previous image -->
+                        </div>
+
+                        <!-- Small Image Section (Thumbnail navigation for images) -->
+                        <div
+                          thumbnailSwiper=""
+                          class="small-img small-img-swiper"
+                        >
+                          <!-- Container for small image thumbnails -->
+                          <ul
+                            class="small-img-wrapper flex-item swiper-wrapper"
+                          >
+                            <!-- List of small images for navigation -->
+
+                            <!-- Thumbnail 1 -->
+                            <li class="thumbnail-show swiper-slide">
+                              <!-- First thumbnail image slide -->
+                              <img
+                                src="/assets/products/home-decor/home-decor-1.jpg"
+                                alt="Shoes Image"
+                              />
+                              <!-- Thumbnail image for product -->
+                            </li>
+
+                            <!-- Thumbnail 2 -->
+                            <li class="thumbnail-show swiper-slide">
+                              <!-- Second thumbnail image slide -->
+                              <img
+                                src="/assets/products/home-decor/home-decor-2.jpg"
+                                alt="Shoes Image"
+                              />
+                              <!-- Thumbnail image for product -->
+                            </li>
+
+                            <!-- Thumbnail 3 -->
+                            <li class="thumbnail-show swiper-slide">
+                              <!-- Third thumbnail image slide -->
+                              <img
+                                src="/assets/products/home-decor/home-decor-3.jpg"
+                                alt="Shoes Image"
+                              />
+                              <!-- Thumbnail image for product -->
+                            </li>
+
+                            <!-- Thumbnail 4 -->
+                            <li class="thumbnail-show swiper-slide">
+                              <!-- Fourth thumbnail image slide -->
+                              <img
+                                src="/assets/products/home-decor/home-decor-4.png"
+                                alt="Shoes Image"
+                              />
+                              <!-- Thumbnail image for product -->
+                            </li>
+
+                            <!-- Thumbnail 5 -->
+                            <li class="thumbnail-show swiper-slide">
+                              <!-- Fifth thumbnail image slide -->
+                              <img
+                                src="/assets/products/home-decor/home-decor-5.png"
+                                alt="Shoes Image"
+                              />
+                              <!-- Thumbnail image for product -->
+                            </li>
+
+                            <!-- Thumbnail 6 -->
+                            <li class="thumbnail-show swiper-slide">
+                              <!-- Sixth thumbnail image slide -->
+                              <img
+                                src="/assets/products/home-decor/home-decor-6.jpg"
+                                alt="Shoes Image"
+                              />
+                              <!-- Thumbnail image for product -->
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- End of small image section -->
+                      </div>
+                    </div>
+                    <!-- End of row -->
+
+                    <div class="row">
+                      <!-- Container for the row of content -->
+                      <div class="item">
+                        <!-- Single product item container -->
+                        <h1>Lemon - Loveseat Sofa - Aqua Blue</h1>
+                        <!-- Product title -->
+
+                        <div class="content">
+                          <!-- Container for the product details content -->
+
+                          <!-- Rating Section -->
+                          <div class="rating">
+                            <!-- Container for the product rating -->
+                            <div class="stars"></div>
+                            <!-- Placeholder for the star rating (likely dynamically filled) -->
+
+                            <a href="#" class="mini-text">
+                              ( 1,545+ ) Reviews
+                              <!-- Text showing the number of reviews -->
+                            </a>
+                            <a href="#" class="add-review mini-text">
+                              Add a review
+                              <!-- Link for adding a product review -->
+                            </a>
+                          </div>
+
+                          <!-- Stock Keeping Units (SKU) Section -->
+                          <div class="stock-keeping-unit">
+                            <!-- Section showing stock status and SKU -->
+                            <span class="available">
+                              <i class="ri-checkbox-circle-line"></i>
+                              <!-- Icon for available status -->
+                              In Stock
+                              <!-- Text showing that the product is in stock -->
+                            </span>
+
+                            <span class="sku mini-text"> SKU: 126 </span>
+                            <!-- Displaying the product's SKU number -->
+                          </div>
+
+                          <!-- Price Section -->
+                          <div class="price">
+                            <!-- Container for displaying the product price -->
+                            <span class="current">$1,800.00</span>
+                            <!-- Current discounted price -->
+                            <span class="normal mini-text">$2,000.00</span>
+                            <!-- Original price (crossed out) -->
+                          </div>
+
+                          <!-- Available Colors Section -->
+                          <div class="colors">
+                            <!-- Container for available colors -->
+                            <p>Available Colors:</p>
+                            <!-- Label for color options -->
+
+                            <div class="varient">
+                              <!-- Container for the color selection options -->
+                              <form>
+                                <!-- Aqua Color Option -->
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="color"
+                                    id="aquaColor"
+                                  />
+                                  <!-- Radio button for Aqua color -->
+                                  <label for="aquaColor" class="circle"></label>
+                                  <!-- Label for Aqua color (styled as a circle) -->
+                                </p>
+
+                                <!-- Orange Color Option -->
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="color"
+                                    id="orangeColor"
+                                  />
+                                  <!-- Radio button for Orange color -->
+                                  <label
+                                    for="orangeColor"
+                                    class="circle"
+                                  ></label>
+                                  <!-- Label for Orange color -->
+                                </p>
+
+                                <!-- Grey Color Option -->
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="color"
+                                    id="greyColor"
+                                  />
+                                  <!-- Radio button for Grey color -->
+                                  <label for="greyColor" class="circle"></label>
+                                  <!-- Label for Grey color -->
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+
+                          <!-- Available Sizes Section -->
+                          <div class="sizes">
+                            <!-- Container for available sizes -->
+                            <p>Available Sizes ( in ft.):</p>
+                            <!-- Label for size options -->
+
+                            <div class="varient">
+                              <!-- Container for the size selection options -->
+                              <form>
+                                <!-- Small Size (UK: 07) Option -->
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="size"
+                                    id="size-07"
+                                  />
+                                  <!-- Radio button for Small size -->
+                                  <label for="size-07" class="circle"
+                                    ><span> 04 </span></label
+                                  >
+                                  <!-- Label for Small size (04 ft) -->
+                                </p>
+
+                                <!-- Medium Size (UK: 08) Option -->
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="size"
+                                    id="size-08"
+                                  />
+                                  <!-- Radio button for Medium size -->
+                                  <label for="size-08" class="circle"
+                                    ><span> 06 </span></label
+                                  >
+                                  <!-- Label for Medium size (06 ft) -->
+                                </p>
+
+                                <!-- Large Size (UK: 09) Option -->
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="size"
+                                    id="size-09"
+                                  />
+                                  <!-- Radio button for Large size -->
+                                  <label for="size-09" class="circle"
+                                    ><span> 08 </span></label
+                                  >
+                                  <!-- Label for Large size (08 ft) -->
+                                </p>
+
+                                <!-- Extra Large Size (UK: 10) Option -->
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="size"
+                                    id="size-10"
+                                  />
+                                  <!-- Radio button for Extra Large size -->
+                                  <label for="size-10" class="circle"
+                                    ><span> 10 </span></label
+                                  >
+                                  <!-- Label for Extra Large size (10 ft) -->
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+
+                          <!-- Action Buttons Section -->
+                          <div class="actions">
+                            <!-- Container for product actions (quantity, add to cart, etc.) -->
+
+                            <div class="quantity-controls flex-item">
+                              <!-- Container for quantity control buttons -->
+                              <button class="minus circle">
+                                <!-- Button to decrease quantity -->
+                                <i class="ri-subtract-line"></i>
+                                <!-- Icon for subtract -->
+                              </button>
+
+                              <input type="text" value="1" />
+                              <!-- Input field for selecting the quantity -->
+
+                              <button class="plus circle">
+                                <!-- Button to increase quantity -->
+                                <i class="ri-add-line"></i>
+                                <!-- Icon for add -->
+                              </button>
+                            </div>
+
+                            <!-- Add to Cart Button -->
+                            <div class="cart-btn">
+                              <button class="primary-btn">
+                                Add to Cart
+                                <i class="ri-shopping-cart-line"></i>
+                                <!-- Icon for the shopping cart -->
+                              </button>
+                            </div>
+
+                            <!-- Add to Wishlist & Share Buttons Section -->
+                            <div class="whish-share">
+                              <!-- Container for Wishlist and Share buttons -->
+                              <ul class="flex-item second-links">
+                                <!-- Unordered list for the links -->
+
+                                <!-- Wishlist Button -->
+                                <li>
+                                  <a href="#">
+                                    <span class="large-icon">
+                                      <i class="ri-heart-line"></i>
+                                      <!-- Icon for Wishlist -->
+                                    </span>
+                                    <span> Wishlist </span>
+                                    <!-- Text label for Wishlist -->
+                                  </a>
+                                </li>
+
+                                <!-- Share Button -->
+                                <li>
+                                  <a href="#">
+                                    <span class="large-icon">
+                                      <i class="ri-share-forward-line"></i>
+                                      <!-- Icon for Share -->
+                                    </span>
+                                    <span> Share </span>
+                                    <!-- Text label for Share -->
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Product Description & Reviews Section -->
+                          <div class="description collapse">
+                            <!-- Collapsible description section -->
+                            <ul>
+                              <!-- Product Information Section -->
+                              <li class="has-child expand">
+                                <a href="#" class="small-icon"> Information </a>
+                                <!-- Link for more product information -->
+
+                                <ul class="content">
+                                  <li>
+                                    <span> Brand: </span>
+                                    <span> Lemon </span>
+                                    <!-- Product brand -->
+                                  </li>
+                                  <li>
+                                    <span> Outer Fabric: </span>
+                                    <span> Poly Cotton 250 GSM </span>
+                                    <!-- Outer fabric material -->
+                                  </li>
+                                  <li>
+                                    <span> Filling: </span>
+                                    <span> PU Foam and Recron </span>
+                                    <!-- Filling material -->
+                                  </li>
+                                  <li>
+                                    <span> Frame Material: </span>
+                                    <span> Solid Hard Wood </span>
+                                    <!-- Frame material -->
+                                  </li>
+                                </ul>
+                              </li>
+
+                              <!-- Product Details Section -->
+                              <li class="has-child">
+                                <!-- List item with collapsible content for Product Details -->
+                                <a href="#" class="small-icon">
+                                  <!-- Link for expanding the product details section -->
+                                  Product Details
+                                </a>
+
+                                <div class="content">
+                                  <!-- Container for the product details content -->
+                                  <p>
+                                    This sneaker is perfect for a casual run. It
+                                    features a comfortable fit and a breathable
+                                    material. It is also available in various
+                                    colors and sizes.
+                                  </p>
+
+                                  <p class="product-desc">
+                                    The product is made from high-quality
+                                    materials and features a durable and
+                                    comfortable design. It is perfect for
+                                    running and other outdoor activities.
+                                  </p>
+                                </div>
+                              </li>
+
+                              <!-- Custom Size Chart Section -->
+                              <li class="has-child">
+                                <!-- List item with collapsible content for Custom Size Chart -->
+                                <a href="#" class="small-icon">
+                                  <!-- Link for expanding the size chart section -->
+                                  Custom Size Chart
+                                </a>
+
+                                <div class="content">
+                                  <!-- Container for the size chart content -->
+                                  <table>
+                                    <!-- Table to display the size chart -->
+                                    <thead>
+                                      <!-- Table header with column names -->
+                                      <tr>
+                                        <th>Size</th>
+                                        <!-- Size column -->
+                                        <th>
+                                          Bust
+                                          <span class="mini-text"> (cm) </span>
+                                          <!-- Bust measurement column -->
+                                        </th>
+                                        <th>
+                                          Hip
+                                          <span class="mini-text"> (cm) </span>
+                                          <!-- Hip measurement column -->
+                                        </th>
+                                        <th>
+                                          Waist
+                                          <span class="mini-text"> (cm) </span>
+                                          <!-- Waist measurement column -->
+                                        </th>
+                                      </tr>
+                                    </thead>
+
+                                    <tbody>
+                                      <!-- Table body containing size data -->
+
+                                      <!-- Extra Small Size -->
+                                      <tr>
+                                        <td>XS</td>
+                                        <!-- Size XS -->
+                                        <td>82.5</td>
+                                        <!-- Bust measurement for XS -->
+                                        <td>62</td>
+                                        <!-- Hip measurement for XS -->
+                                        <td>87.5</td>
+                                        <!-- Waist measurement for XS -->
+                                      </tr>
+
+                                      <!-- Small Size -->
+                                      <tr>
+                                        <td>S</td>
+                                        <!-- Size S -->
+                                        <td>85</td>
+                                        <!-- Bust measurement for S -->
+                                        <td>63.5</td>
+                                        <!-- Hip measurement for S -->
+                                        <td>89</td>
+                                        <!-- Waist measurement for S -->
+                                      </tr>
+
+                                      <!-- Medium Size -->
+                                      <tr>
+                                        <td>M</td>
+                                        <!-- Size M -->
+                                        <td>87.5</td>
+                                        <!-- Bust measurement for M -->
+                                        <td>65</td>
+                                        <!-- Hip measurement for M -->
+                                        <td>90.5</td>
+                                        <!-- Waist measurement for M -->
+                                      </tr>
+
+                                      <!-- Large Size -->
+                                      <tr>
+                                        <td>L</td>
+                                        <!-- Size L -->
+                                        <td>89.5</td>
+                                        <!-- Bust measurement for L -->
+                                        <td>66</td>
+                                        <!-- Hip measurement for L -->
+                                        <td>92</td>
+                                        <!-- Waist measurement for L -->
+                                      </tr>
+
+                                      <!-- Extra Large Size -->
+                                      <tr>
+                                        <td>XL</td>
+                                        <!-- Size XL -->
+                                        <td>89.5</td>
+                                        <!-- Bust measurement for XL -->
+                                        <td>66.5</td>
+                                        <!-- Hip measurement for XL -->
+                                        <td>93.5</td>
+                                        <!-- Waist measurement for XL -->
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </li>
+
+                              <!-- Reviews Section -->
+                              <li class="has-child">
+                                <!-- List item with collapsible content for Reviews -->
+                                <a href="#" class="small-icon">
+                                  <!-- Link for expanding the reviews section -->
+                                  Reviews
+                                  <span class="mini-text"> 1.5k+ </span>
+                                  <!-- Text showing the number of reviews -->
+                                </a>
+
+                                <div class="content">
+                                  <!-- Container for the reviews content -->
+                                  <div class="reviews">
+                                    <!-- Wrapper for the review content -->
+
+                                    <h4>Customer's Review's</h4>
+                                    <!-- Heading for the customer reviews section -->
+
+                                    <div class="review-block">
+                                      <!-- Container for a block of reviews -->
+                                      <div class="block-head">
+                                        <!-- Header section for review summary -->
+                                        <div class="flex-item">
+                                          <span class="rate-sum"> 4.8 </span>
+                                          <!-- Average rating -->
+                                          <span> 1,545+ Reviews </span>
+                                          <!-- Total number of reviews -->
+                                        </div>
+
+                                        <a
+                                          href="#review-form"
+                                          class="secondary-btn"
+                                        >
+                                          <!-- Link to the review form -->
+                                          Write a review
+                                        </a>
+                                      </div>
+
+                                      <div class="block-body">
+                                        <!-- Container for individual reviews -->
+                                        <ul>
+                                          <!-- List of individual reviews -->
+
+                                          <!-- 1st Review -->
+                                          <li class="item">
+                                            <!-- Review list item -->
+                                            <div class="review-form">
+                                              <!-- Container for the reviewer's information -->
+                                              <p class="person-name">
+                                                Review by Sarah
+                                              </p>
+                                              <p class="mini-text">
+                                                On 07/12/24
+                                              </p>
+                                            </div>
+
+                                            <div class="review-rating rating">
+                                              <!-- Rating section for this review -->
+                                              <div class="stars"></div>
+                                              <!-- Stars representing the rating -->
+                                            </div>
+
+                                            <div class="review-title">
+                                              <!-- Title of the review -->
+                                              <h5>Great Sneaker.</h5>
+                                            </div>
+
+                                            <div class="review-text">
+                                              <!-- Text content of the review -->
+                                              <p>
+                                                10/10 would buy again! This
+                                                sneaker is just perfect for
+                                                running. I love the breathable
+                                                material and the comfortable
+                                                fit. I highly recommend this.
+                                              </p>
+                                            </div>
+                                          </li>
+
+                                          <!-- 2nd Review -->
+                                          <li class="item">
+                                            <!-- Another review list item -->
+                                            <div class="review-form">
+                                              <!-- Container for the reviewer's information -->
+                                              <p class="person-name">
+                                                Review by Emily
+                                              </p>
+                                              <p class="mini-text">
+                                                On 07/12/24
+                                              </p>
+                                            </div>
+
+                                            <div class="review-rating rating">
+                                              <!-- Rating section for this review -->
+                                              <div class="stars"></div>
+                                              <!-- Stars representing the rating -->
+                                            </div>
+
+                                            <div class="review-title">
+                                              <!-- Title of the review -->
+                                              <h5>Comfortable and Durable.</h5>
+                                            </div>
+
+                                            <div class="review-text">
+                                              <!-- Text content of the review -->
+                                              <p>
+                                                I love this sneaker! It's
+                                                perfect for me and my husband.
+                                                The fit is perfect and the
+                                                material is soft and
+                                                comfortable. I highly recommend
+                                                it!
+                                              </p>
+                                            </div>
+                                          </li>
+                                        </ul>
+
+                                        <div class="second-links">
+                                          <!-- Container for secondary links -->
+                                          <a href="#" class="view-all">
+                                            <!-- Link to view all reviews -->
+                                            View All Reviews
+                                            <i class="ri-arrow-right-line"></i>
+                                            <!-- Icon indicating more reviews -->
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- End of block-body -->
+
+                                      <!-- Review Form -->
+                                      <div
+                                        id="review-form"
+                                        class="modal review-form"
+                                      >
+                                        <!-- Modal container for the review form, with an ID and classes for styling -->
+                                        <h4>Write a Review</h4>
+                                        <!-- Heading for the review form -->
+
+                                        <div class="rating">
+                                          <!-- Container for the rating section -->
+                                          <p>Rate this product (1-5 stars)</p>
+                                          <!-- Instruction for the user to rate the product -->
+
+                                          <div class="rate-this">
+                                            <!-- Container for the individual star ratings -->
+
+                                            <!-- Five stars -->
+                                            <input
+                                              type="radio"
+                                              name="rating"
+                                              id="fiveStars"
+                                            />
+                                            <!-- Radio button for 5 stars rating -->
+                                            <label for="fiveStars">
+                                              <i class="ri-star-fill"></i>
+                                            </label>
+                                            <!-- Star icon representing 5 stars -->
+
+                                            <!-- Four stars -->
+                                            <input
+                                              type="radio"
+                                              name="rating"
+                                              id="fourStars"
+                                            />
+                                            <!-- Radio button for 4 stars rating -->
+                                            <label for="fourStars">
+                                              <i class="ri-star-fill"></i>
+                                            </label>
+                                            <!-- Star icon representing 4 stars -->
+
+                                            <!-- Three stars -->
+                                            <input
+                                              type="radio"
+                                              name="rating"
+                                              id="threeStars"
+                                            />
+                                            <!-- Radio button for 3 stars rating -->
+                                            <label for="threeStars">
+                                              <i class="ri-star-fill"></i>
+                                            </label>
+                                            <!-- Star icon representing 3 stars -->
+
+                                            <!-- Two stars -->
+                                            <input
+                                              type="radio"
+                                              name="rating"
+                                              id="twoStars"
+                                            />
+                                            <!-- Radio button for 2 stars rating -->
+                                            <label for="twoStars">
+                                              <i class="ri-star-fill"></i>
+                                            </label>
+                                            <!-- Star icon representing 2 stars -->
+
+                                            <!-- One star -->
+                                            <input
+                                              type="radio"
+                                              name="rating"
+                                              id="oneStar"
+                                            />
+                                            <!-- Radio button for 1 star rating -->
+                                            <label for="oneStar">
+                                              <i class="ri-star-fill"></i>
+                                            </label>
+                                            <!-- Star icon representing 1 star -->
+                                          </div>
+                                        </div>
+
+                                        <form>
+                                          <!-- Form for submitting the review -->
+                                          <p>
+                                            <label>Name: </label>
+                                            <!-- Label for the name input field -->
+                                            <input
+                                              type="text"
+                                              name="name"
+                                              required
+                                            />
+                                            <!-- Input field for the user's name, marked as required -->
+                                          </p>
+
+                                          <p>
+                                            <label>Summary: </label>
+                                            <!-- Label for the summary input field -->
+                                            <input
+                                              type="email"
+                                              name="summery"
+                                              required
+                                            />
+                                            <!-- Input field for the user's summary, marked as required -->
+                                          </p>
+
+                                          <p>
+                                            <label>Review: </label>
+                                            <!-- Label for the review textarea -->
+                                            <textarea
+                                              cols="30"
+                                              rows="10"
+                                              name="review"
+                                              required
+                                            ></textarea>
+                                            <!-- Textarea for the user's review, marked as required -->
+                                          </p>
+
+                                          <p>
+                                            <a href="#" class="primary-btn">
+                                              <!-- Link styled as a button to submit the review -->
+                                              <i class="ri-add-line"></i>
+                                              <!-- Icon for adding (Submit) -->
+                                              Submit Review
+                                            </a>
+                                          </p>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- End of Product Description & Reviews Section -->
+                        </div>
+                        <!-- End of content -->
+                      </div>
+                      <!-- End of item -->
+                    </div>
+                    <!-- End of row -->
+                  </div>
+                  <!-- End of flex-wrap -->
+                </div>
+                <!-- End of products one -->
+              </div>
+              <!-- End of column -->
+            </div>
+            <!-- End of wrapper -->
+          </div>
+          <!-- End of container -->
+        </div>
+        <!-- End of single-product container -->
+
+        <!-- ===================== Featured Products ===================== -->
+
+        <div class="features">
+          <!-- Container for the featured section -->
+          <div class="container">
+            <!-- Main container for the section's content -->
+            <div class="wrapper">
+              <!-- Wrapper for the section's layout -->
+
+              <div class="column">
+                <!-- Column for the first part (heading and products) -->
+
+                <div class="section-top flex-item">
+                  <!-- Section top: contains title and view all link -->
+                  <h2>
+                    <!-- Section title -->
+                    <span class="circle"></span>
+                    <!-- Decorative circle icon before the title -->
+                    <span> Related Products </span>
+                    <!-- Title text -->
+                  </h2>
+
+                  <div class="second-links">
+                    <!-- Links for additional actions like "View All" -->
+                    <a href="#" class="view-all">
+                      <!-- View all link for the related products -->
+                      View All
+                      <i class="ri-arrow-right-s-line"></i>
+                      <!-- Right arrow icon for the link -->
+                    </a>
+                  </div>
+                </div>
+
+                <div class="products main flex-wrap">
+                  <!-- Main container for displaying products with flexbox layout -->
+
+                  <!-- Product 1 -->
+                  <div class="item">
+                    <!-- Wrapper for a single product -->
+                    <div class="media">
+                      <!-- Media section: holds product image and hover options -->
+                      <div class="thumbnail obj-cover">
+                        <!-- Product image thumbnail -->
+                        <a href="#">
+                          <!-- Link wrapping the image for product details -->
+                          <img
+                            src="/assets/products/home-decor/home-decor-f-1.jpg"
+                            alt=""
+                          />
+                          <!-- Image source and alt text for the product -->
+                        </a>
+                      </div>
+
+                      <div class="hoverAble">
+                        <!-- Hover actions for the product (e.g., add to wishlist, view, etc.) -->
+                        <ul>
+                          <!-- List of hover actions -->
+                          <li class="active">
+                            <!-- Wishlist button, active when selected -->
+                            <a href="#">
+                              <i class="ri-heart-line"></i>
+                              <!-- Heart icon for adding to wishlist -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <!-- View button -->
+                            <a href="#">
+                              <i class="ri-eye-line"></i>
+                              <!-- Eye icon for viewing the product -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <!-- Shuffle button (for comparisons or random selections) -->
+                            <a href="#">
+                              <i class="ri-shuffle-line"></i>
+                              <!-- Shuffle icon -->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="discount circle flex-center">
+                        <!-- Discount badge -->
+                        <span> 25% </span>
+                        <!-- Discount percentage text -->
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <!-- Content section for product details (rating, title, price) -->
+                      <div class="rating">
+                        <!-- Product rating section -->
+                        <div class="stars"></div>
+                        <!-- Star rating, may be populated with actual stars via JavaScript -->
+                        <span class="mini-text"> ( 1,545 ) </span>
+                        <!-- Number of reviews -->
+                      </div>
+
+                      <h3>
+                        <!-- Product title -->
+                        <a href="#">
+                          <!-- Product link -->
+                          Cyrus Sheesham Wood Wall Mount Multipurpose Rack
+                          <!-- Product name -->
+                        </a>
+                      </h3>
+
+                      <div class="price">
+                        <!-- Price section -->
+                        <span class="new-price current">$120.00</span>
+                        <!-- Current price -->
+                        <span class="old-price mini-text normal">$140.00</span>
+                        <!-- Original price with a mini-text style -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product 2 -->
+                  <div class="item">
+                    <!-- Wrapper for second product -->
+                    <div class="media">
+                      <!-- Media section for the second product -->
+                      <div class="thumbnail obj-cover">
+                        <!-- Thumbnail of the second product -->
+                        <a href="#">
+                          <img
+                            src="/assets/products/home-decor/home-decor-f-2.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+
+                      <div class="hoverAble">
+                        <!-- Hover actions for the second product -->
+                        <ul>
+                          <li class="active">
+                            <a href="#">
+                              <i class="ri-heart-line"></i>
+                              <!-- Wishlist icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-eye-line"></i>
+                              <!-- View icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-shuffle-line"></i>
+                              <!-- Shuffle icon -->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="discount circle flex-center">
+                        <!-- Discount badge for second product -->
+                        <span> 35% </span>
+                        <!-- Discount percentage -->
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <!-- Content section for the second product -->
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text"> ( 1,545 ) </span>
+                        <!-- Reviews for second product -->
+                      </div>
+
+                      <h3>
+                        <a href="#">
+                          <!-- Title link for second product -->
+                          Medallion MDF Cutlery Holder ( Kitchen Appliances )
+                        </a>
+                      </h3>
+
+                      <div class="price">
+                        <span class="new-price current">$1200.00</span>
+                        <!-- Current price of second product -->
+                        <span class="old-price mini-text normal">$1400.00</span>
+                        <!-- Old price with a mini-text style -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product 3 -->
+                  <div class="item">
+                    <!-- Wrapper for the third product -->
+                    <div class="media">
+                      <!-- Media section -->
+                      <div class="thumbnail obj-cover">
+                        <!-- Product image thumbnail -->
+                        <a href="#">
+                          <img
+                            src="/assets/products/home-decor/home-decor-f-3.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+
+                      <div class="hoverAble">
+                        <!-- Hoverable actions for the third product -->
+                        <ul>
+                          <li class="active">
+                            <a href="#">
+                              <i class="ri-heart-line"></i>
+                              <!-- Wishlist icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-eye-line"></i>
+                              <!-- View icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-shuffle-line"></i>
+                              <!-- Shuffle icon -->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="discount circle flex-center">
+                        <!-- Discount badge for third product -->
+                        <span> 20% </span>
+                        <!-- Discount percentage -->
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <!-- Content section for the third product -->
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text"> ( 1,545 ) </span>
+                        <!-- Reviews for third product -->
+                      </div>
+
+                      <h3>
+                        <a href="#"> Mendel Bar Trolley (Honey Finish) </a>
+                        <!-- Title for the third product -->
+                      </h3>
+
+                      <div class="price">
+                        <span class="new-price current">$800.00</span>
+                        <!-- Price for third product -->
+                        <span class="old-price mini-text normal">$860.00</span>
+                        <!-- Original price for third product -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product 4 -->
+                  <div class="item">
+                    <!-- Wrapper for fourth product -->
+                    <div class="media">
+                      <!-- Media section for the fourth product -->
+                      <div class="thumbnail obj-cover">
+                        <!-- Product image thumbnail -->
+                        <a href="#">
+                          <img
+                            src="/assets/products/home-decor/home-decor-f-4.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+
+                      <div class="hoverAble">
+                        <!-- Hoverable actions for fourth product -->
+                        <ul>
+                          <li class="active">
+                            <a href="#">
+                              <i class="ri-heart-line"></i>
+                              <!-- Wishlist icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-eye-line"></i>
+                              <!-- View icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-shuffle-line"></i>
+                              <!-- Shuffle icon -->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="discount circle flex-center">
+                        <!-- Discount badge for fourth product -->
+                        <span> 30% </span>
+                        <!-- Discount percentage -->
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <!-- Content section for fourth product -->
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text"> ( 1,545 ) </span>
+                        <!-- Reviews for fourth product -->
+                      </div>
+
+                      <h3>
+                        <a href="#">
+                          Adolph Sheesham Wood Bed Without Storage (King Size,
+                          Walnut Finish)
+                        </a>
+                        <!-- Title for fourth product -->
+                      </h3>
+
+                      <div class="price">
+                        <span class="new-price current">$799.00</span>
+                        <!-- Current price for fourth product -->
+                        <span class="old-price mini-text normal">$850.00</span>
+                        <!-- Old price for fourth product -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 5 -->
+
+                  <!-- 5th Product Item -->
+                  <div class="item">
+                    <!-- Wrapper for the fifth product -->
+                    <div class="media">
+                      <!-- Media section containing the product image and hover actions -->
+                      <div class="thumbnail obj-cover">
+                        <!-- Container for the product image -->
+                        <a href="#">
+                          <!-- Link for the product (typically leads to a product detail page) -->
+                          <img
+                            src="/assets/products/home-decor/home-decor-f-5.jpg"
+                            alt=""
+                          />
+                          <!-- Alt text for accessibility -->
+                        </a>
+                      </div>
+
+                      <div class="hoverAble">
+                        <!-- Section for the hover actions -->
+                        <ul>
+                          <!-- List of hover actions (e.g., add to wishlist, view details, shuffle) -->
+                          <li class="active">
+                            <!-- Wishlist button (active when selected) -->
+                            <a href="#">
+                              <i class="ri-heart-line"></i>
+                              <!-- Heart icon for adding to wishlist -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <!-- View button -->
+                            <a href="#">
+                              <i class="ri-eye-line"></i>
+                              <!-- Eye icon for viewing the product details -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <!-- Shuffle button (for comparison or random selection) -->
+                            <a href="#">
+                              <i class="ri-shuffle-line"></i>
+                              <!-- Shuffle icon -->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="discount circle flex-center">
+                        <!-- Discount badge -->
+                        <span> 15% </span>
+                        <!-- Discount percentage -->
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <!-- Content section for the product details -->
+                      <div class="rating">
+                        <!-- Rating section -->
+                        <div class="stars"></div>
+                        <!-- Placeholder for stars rating (may be dynamically filled) -->
+                        <span class="mini-text"> ( 1,545 ) </span>
+                        <!-- Number of reviews -->
+                      </div>
+
+                      <h3>
+                        <!-- Product title -->
+                        <a href="#"> Jet Brown Wooden Cluster Hanging Lamp </a>
+                        <!-- Product name with link -->
+                      </h3>
+
+                      <div class="price">
+                        <!-- Price section -->
+                        <span class="new-price current">$320.00</span>
+                        <!-- Current price of the product -->
+                        <span class="old-price mini-text normal">$380.00</span>
+                        <!-- Original price (crossed out) -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 6th Product Item -->
+                  <div class="item">
+                    <!-- Wrapper for the sixth product -->
+                    <div class="media">
+                      <!-- Media section -->
+                      <div class="thumbnail obj-cover">
+                        <!-- Product image container -->
+                        <a href="#">
+                          <!-- Link to the product page -->
+                          <img
+                            src="/assets/products/home-decor/home-decor-f-6.jpg"
+                            alt=""
+                          />
+                          <!-- Alt text for the image -->
+                        </a>
+                      </div>
+
+                      <div class="hoverAble">
+                        <!-- Hover actions section -->
+                        <ul>
+                          <li class="active">
+                            <a href="#">
+                              <i class="ri-heart-line"></i>
+                              <!-- Wishlist button -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-eye-line"></i>
+                              <!-- View button -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-shuffle-line"></i>
+                              <!-- Shuffle button -->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="discount circle flex-center">
+                        <!-- Discount badge for the product -->
+                        <span> 40% </span>
+                        <!-- Discount percentage -->
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <!-- Content section for the product -->
+                      <div class="rating">
+                        <!-- Rating section -->
+                        <div class="stars"></div>
+                        <!-- Placeholder for star ratings -->
+                        <span class="mini-text"> ( 1,545 ) </span>
+                        <!-- Number of reviews -->
+                      </div>
+
+                      <h3>
+                        <!-- Product title -->
+                        <a href="#">
+                          Nivaan Suede Rocking Revolving Motorized Recliner
+                        </a>
+                        <!-- Product name -->
+                      </h3>
+
+                      <div class="price">
+                        <!-- Price section -->
+                        <span class="new-price current">$1,999.00</span>
+                        <!-- Current price of the product -->
+                        <span class="old-price mini-text normal"
+                          >$2,499.00</span
+                        >
+                        <!-- Original price with a mini-text style -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 7th Product Item -->
+                  <div class="item">
+                    <!-- Wrapper for the seventh product -->
+                    <div class="media">
+                      <!-- Media section -->
+                      <div class="thumbnail obj-cover">
+                        <!-- Product image -->
+                        <a href="#">
+                          <!-- Link to product page -->
+                          <img
+                            src="/assets/products/home-decor/home-decor-f-7.jpg"
+                            alt=""
+                          />
+                          <!-- Alt text for accessibility -->
+                        </a>
+                      </div>
+
+                      <div class="hoverAble">
+                        <!-- Hover actions for the seventh product -->
+                        <ul>
+                          <li class="active">
+                            <a href="#">
+                              <i class="ri-heart-line"></i>
+                              <!-- Wishlist icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-eye-line"></i>
+                              <!-- View product icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-shuffle-line"></i>
+                              <!-- Shuffle icon -->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="discount circle flex-center">
+                        <!-- Discount badge -->
+                        <span> 20% </span>
+                        <!-- Discount percentage -->
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <!-- Content section -->
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text"> ( 1,545 ) </span>
+                        <!-- Number of reviews -->
+                      </div>
+
+                      <h3>
+                        <!-- Product title -->
+                        <a href="#">
+                          Elif Executive Table (Exotic Teak Finish)
+                        </a>
+                        <!-- Product name with a link -->
+                      </h3>
+
+                      <div class="price">
+                        <!-- Price section -->
+                        <span class="new-price current">$1,299.00</span>
+                        <!-- Current price -->
+                        <span class="old-price mini-text normal"
+                          >$1,499.00</span
+                        >
+                        <!-- Original price -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 8th Product Item -->
+                  <div class="item">
+                    <!-- Wrapper for the eighth product -->
+                    <div class="media">
+                      <!-- Media section -->
+                      <div class="thumbnail obj-cover">
+                        <!-- Thumbnail image container -->
+                        <a href="#">
+                          <!-- Link to the product page -->
+                          <img
+                            src="/assets/products/home-decor/home-decor-f-8.jpg"
+                            alt=""
+                          />
+                          <!-- Alt text for the image -->
+                        </a>
+                      </div>
+
+                      <div class="hoverAble">
+                        <!-- Hoverable actions section -->
+                        <ul>
+                          <li class="active">
+                            <a href="#">
+                              <i class="ri-heart-line"></i>
+                              <!-- Wishlist icon -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-eye-line"></i>
+                              <!-- View button -->
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <i class="ri-shuffle-line"></i>
+                              <!-- Shuffle icon -->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="discount circle flex-center">
+                        <!-- Discount circle for the product -->
+                        <span> 30% </span>
+                        <!-- Discount percentage -->
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <!-- Content section for the eighth product -->
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <!-- Stars for product rating -->
+                        <span class="mini-text"> ( 1,545 ) </span>
+                        <!-- Number of reviews -->
+                      </div>
+
+                      <h3>
+                        <!-- Product title -->
+                        <a href="#">
+                          Grey Rope 2 Seater Chair With Table And Santa Grey
+                          Cushions Balcony Set
+                        </a>
+                        <!-- Product name -->
+                      </h3>
+
+                      <div class="price">
+                        <!-- Price section -->
+                        <span class="new-price current">$2,280.00</span>
+                        <!-- Current price -->
+                        <span class="old-price mini-text normal"
+                          >$2,499.00</span
+                        >
+                        <!-- Original price -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of products list -->
+              </div>
+              <!-- End of column -->
+            </div>
+            <!-- End of wrapper -->
+          </div>
+          <!-- End of container -->
+        </div>
+        <!-- End of features section -->
+
+        <!-- ===================== Product Banners ===================== -->
+
+        <!-- Main Banners Section -->
+        <div class="banners">
+          <!-- Container for wrapping the banner content and aligning it properly -->
+          <div class="container">
+            <div class="wrapper">
+              <div class="column">
+                <!-- Banner Section -->
+                <div class="banner flex-wrap">
+                  <!-- First Banner for Chair Promotion -->
+                  <div class="row">
+                    <div class="item">
+                      <!-- Image for the banner -->
+                      <div class="image">
+                        <img
+                          src="/assets/banner/banner1.jpg"
+                          alt="Banner Image"
+                        />
+                      </div>
+
+                      <!-- Text content for the banner -->
+                      <div class="text-content flex-column">
+                        <!-- Subheading for the banner -->
+                        <h4>Winter Sale</h4>
+                        <!-- Main heading and promotional text -->
+                        <h3>
+                          <span> Limited time offer! </span>
+                          <br />
+                          Grab your favorite chair now!
+                        </h3>
+                        <!-- Shop Now button with a link -->
+                        <a href="#" class="primary-btn">
+                          Shop Now
+                          <!-- Right arrow icon inside the button -->
+                          <i class="ri-arrow-right-line"></i>
+                        </a>
+                      </div>
+
+                      <!-- Invisible overlay for better click-through area (for the entire banner) -->
+                      <a href="#" class="over-link"></a>
+                    </div>
+                  </div>
+
+                  <!-- Second Banner for Women's Winter Coat Promotion -->
+                  <div class="row">
+                    <div class="item get-gray">
+                      <!-- Image for the banner -->
+                      <div class="image">
+                        <img
+                          src="/assets/banner/banner2.jpg"
+                          alt="Banner Image"
+                        />
+                      </div>
+
+                      <!-- Text content for the banner -->
+                      <div class="text-content flex-column">
+                        <!-- Subheading for the banner -->
+                        <h4>Winter Sale</h4>
+                        <!-- Main heading and promotional text -->
+                        <h3>
+                          <span> Limited time offer! </span>
+                          <br />
+                          Grab your favorite winter coat now!
+                        </h3>
+                        <!-- Shop Now button with a link -->
+                        <a href="#" class="primary-btn">
+                          Shop Now
+                          <!-- Right arrow icon inside the button -->
+                          <i class="ri-arrow-right-line"></i>
+                        </a>
+                      </div>
+
+                      <!-- Invisible overlay for better click-through area -->
+                      <a href="#" class="over-link"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Product Categories Section -->
+                <div class="product-categories flex-wrap">
+                  <!-- Beauty & Personal Care Category -->
+                  <div class="row">
+                    <div class="item">
+                      <!-- Image for the Beauty & Personal Care category -->
+                      <div class="image">
+                        <img
+                          src="/assets/banner/procat1.jpg"
+                          alt="Banner Image"
+                        />
+                      </div>
+
+                      <!-- Content and links for the category -->
+                      <div class="content mini-links">
+                        <!-- Category heading -->
+                        <h4>Beauty &amp; Personal Care</h4>
+                        <!-- List of subcategories -->
+                        <ul class="flex-column">
+                          <li><a href="#"> Makeup </a></li>
+                          <li><a href="#"> Skin Care </a></li>
+                          <li><a href="#"> Hair Care </a></li>
+                          <li><a href="#"> Fragrances </a></li>
+                          <li><a href="#"> Bath &amp; Body </a></li>
+                        </ul>
+
+                        <!-- Link to view all items in this category -->
+                        <div class="second-links">
+                          <a href="#" class="view-all">
+                            View All
+                            <!-- Right arrow icon inside the link -->
+                            <i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Electronics & Accessories Category -->
+                  <div class="row">
+                    <div class="item">
+                      <!-- Image for the Electronics category -->
+                      <div class="image">
+                        <img
+                          src="/assets/banner/procat2.jpg"
+                          alt="Banner Image"
+                        />
+                      </div>
+
+                      <!-- Content and links for the category -->
+                      <div class="content mini-links">
+                        <!-- Category heading -->
+                        <h4>Electronics &amp; Accessories</h4>
+                        <!-- List of subcategories -->
+                        <ul class="flex-column">
+                          <li><a href="#"> Mobile Phones </a></li>
+                          <li><a href="#"> Tablets </a></li>
+                          <li><a href="#"> TVs &amp; AC </a></li>
+                          <li><a href="#"> Audio &amp; Video </a></li>
+                          <li><a href="#"> Home Audio &amp; Speaker </a></li>
+                        </ul>
+
+                        <!-- Link to view all items in this category -->
+                        <div class="second-links">
+                          <a href="#" class="view-all">
+                            View All
+                            <!-- Right arrow icon inside the link -->
+                            <i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Home & Kitchen Appliances Category -->
+                  <div class="row">
+                    <div class="item">
+                      <!-- Image for the Home & Kitchen category -->
+                      <div class="image">
+                        <img
+                          src="/assets/banner/procat3.jpg"
+                          alt="Banner Image"
+                        />
+                      </div>
+
+                      <!-- Content and links for the category -->
+                      <div class="content mini-links">
+                        <!-- Category heading -->
+                        <h4>Home &amp; Kitchen Appliances</h4>
+                        <!-- List of subcategories -->
+                        <ul class="flex-column">
+                          <li><a href="#"> Cookware &amp; Utensils </a></li>
+                          <li><a href="#"> Furniture </a></li>
+                          <li><a href="#"> Appliances </a></li>
+                          <li><a href="#"> Decor &amp; Accessories </a></li>
+                          <li><a href="#"> Tools &amp; Gadgets </a></li>
+                        </ul>
+
+                        <!-- Link to view all items in this category -->
+                        <div class="second-links">
+                          <a href="#" class="view-all">
+                            View All
+                            <!-- Right arrow icon inside the link -->
+                            <i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- ============================== Footer Section ============================== -->
+
+      <footer>
+        <!-- ===================== NewsLetter ===================== -->
+
+        <!-- Newsletter Subscription Section -->
+        <div class="newsletter">
+          <div class="container">
+            <div class="wrapper">
+              <!-- Box that contains the newsletter content and form -->
+              <div class="box">
+                <!-- Content area for the newsletter header and description -->
+                <div class="content">
+                  <h3>Subscribe to our newsletter</h3>
+                  <!-- Description of the newsletter benefits -->
+                  <p class="description">
+                    Sign up for our newsletter and receive exclusive
+                    <strong> discounts, offers, and updates. </strong>
+                  </p>
+                </div>
+
+                <!-- Form for newsletter subscription -->
+                <form action="" class="search">
+                  <!-- Icon that represents email/mail send action -->
+                  <span class="large-icon">
+                    <i class="ri-mail-send-line"></i>
+                  </span>
+                  <!-- Input field where users can enter their email address -->
+                  <input type="email" placeholder="Your Email Address" />
+                  <!-- Submit button to send the form -->
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== Quick Links ===================== -->
+
+        <!-- Quick Links Widget Section -->
+        <div class="widgets quick-links">
+          <div class="container">
+            <div class="wrapper">
+              <!-- Flexbox container for the columns of links -->
+              <div class="flex-wrap">
+                <!-- First Column: Help & Contact Links -->
+                <div class="row">
+                  <div class="item mini-links">
+                    <!-- Section Title for Help & Contact -->
+                    <h4>Help &amp; Contact</h4>
+                    <!-- List of helpful links for users -->
+                    <ul class="flex-column">
+                      <li><a href="#"> Your Account </a></li>
+                      <li><a href="#"> Track My Order </a></li>
+                      <li><a href="#"> Returns &amp; Exchanges </a></li>
+                      <li><a href="#"> Warranty &amp; Repair </a></li>
+                      <li><a href="#"> Shipping &amp; Delivery </a></li>
+                      <li><a href="#"> Support </a></li>
+                      <li><a href="#"> Contact Us </a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Second Column: Product Categories -->
+                <div class="row">
+                  <div class="item mini-links">
+                    <!-- Section Title for Product Categories -->
+                    <h4>Product Categories</h4>
+                    <!-- List of product categories -->
+                    <ul class="flex-column">
+                      <li><a href="#"> Electronics &amp; Gadgets </a></li>
+                      <li><a href="#"> Home &amp; Kitchen </a></li>
+                      <li><a href="#"> Beauty &amp; Personal Care </a></li>
+                      <li><a href="#"> Clothing &amp; Accessories </a></li>
+                      <li><a href="#"> Sports &amp; Outdoors </a></li>
+                      <li><a href="#"> Toys &amp; Hobbies </a></li>
+                      <li><a href="#"> Sports &amp; Outdoors </a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Third Column: Payment Information -->
+                <div class="row">
+                  <div class="item mini-links">
+                    <!-- Section Title for Payment Information -->
+                    <h4>Payment Information's</h4>
+                    <!-- List of payment-related options -->
+                    <ul class="flex-column">
+                      <li><a href="#"> Credit &amp; Debit Cards </a></li>
+                      <li><a href="#"> PayPal </a></li>
+                      <li><a href="#"> Shop with points </a></li>
+                      <li><a href="#"> Money-back guarantee </a></li>
+                      <li><a href="#"> Secure shopping </a></li>
+                      <li><a href="#"> 100% Secure Payment </a></li>
+                      <li><a href="#"> Safe Shipping </a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Fourth Column: About Us Section -->
+                <div class="row">
+                  <div class="item mini-links">
+                    <!-- Section Title for About Us -->
+                    <h4>About Us</h4>
+                    <!-- List of links related to the company or brand -->
+                    <ul class="flex-column">
+                      <li><a href="#"> Our Story </a></li>
+                      <li><a href="#"> Careers </a></li>
+                      <li><a href="#"> News &amp; Blog </a></li>
+                      <li><a href="#"> Testimonials </a></li>
+                      <li><a href="#"> Terms &amp; Conditions </a></li>
+                      <li><a href="#"> Privacy Policy </a></li>
+                      <li><a href="#"> Refund Policy </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End of flex-wrap -->
+            </div>
+            <!-- End of wrapper -->
+          </div>
+          <!-- End of container -->
+        </div>
+        <!-- End of widgets quick-links section -->
+
+        <!-- ===================== Footer Copyright ===================== -->
+
+        <!-- Footer Info Section -->
+        <div class="footer-info">
+          <div class="container">
+            <div class="wrapper">
+              <!-- Flex Column for logo and social media links -->
+              <div class="flex-column">
+                <!-- Logo Section -->
+                <div class="logo">
+                  <a href="#">
+                    <!-- Circle styled logo for the website -->
+                    <span class="circle"> .Trendify </span>
+                  </a>
+                </div>
+
+                <!-- Social Media Links Section -->
+                <div class="social-media">
+                  <ul class="flex-item">
+                    <!-- Facebook Icon Link -->
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="ri-facebook-box-fill"></i>
+                      </a>
+                    </li>
+
+                    <!-- Twitter Icon Link -->
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="ri-twitter-fill"></i>
+                      </a>
+                    </li>
+
+                    <!-- Instagram Icon Link -->
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="ri-instagram-fill"></i>
+                      </a>
+                    </li>
+
+                    <!-- Pinterest Icon Link -->
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="ri-pinterest-fill"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Text (Copyright and Design Credits) -->
+              <p class="mini-text">
+                &copy; 2024. All rights reserved. | Designed by
+                <strong> Trendify </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End of Footer Info Section -->
+      </footer>
+      <!-- Closing the footer -->
+
+      <!-- ===================== Mobile Menu ===================== -->
+
+      <div class="bottom-menu desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <!-- Navigation Bar -->
+            <nav>
+              <ul class="flex-item">
+                <!-- Trending Link -->
+                <li>
+                  <a href="#">
+                    <i class="ri-bar-chart-line"></i>
+                    <!-- Icon for Trending -->
+                    <span>Trending</span>
+                    <!-- Text for Trending -->
+                  </a>
+                </li>
+
+                <!-- Account Link -->
+                <li>
+                  <a href="#">
+                    <i class="ri-user-line"></i>
+                    <!-- Icon for Account -->
+                    <span>Account</span>
+                    <!-- Text for Account -->
+                  </a>
+                </li>
+
+                <!-- Wishlist Link -->
+                <li>
+                  <a href="#">
+                    <i class="ri-heart-line"></i>
+                    <!-- Icon for Wishlist -->
+                    <span>Wishlist</span>
+                    <!-- Text for Wishlist -->
+                  </a>
+                </li>
+
+                <!-- Search Link -->
+                <li>
+                  <a href="#" class="t-search">
+                    <i class="ri-search-line"></i>
+                    <!-- Icon for Search -->
+                    <span>Search</span>
+                    <!-- Text for Search -->
+                  </a>
+                </li>
+
+                <!-- Cart Link -->
+                <li>
+                  <a href="/cart.html" class="cart-trigger">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <!-- Icon for Cart -->
+                    <span>Cart</span>
+                    <!-- Text for Cart -->
+
+                    <!-- Flyout Cart Item Counter -->
+                    <div class="fly-item">
+                      <span class="item-number">5</span>
+                      <!-- Number of items in the cart -->
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== Search Modal ===================== -->
+
+      <div class="bottom-search desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <!-- Search Form -->
+            <form action="" class="search">
+              <!-- Close Button for Search Modal -->
+              <a href="#" class="t-close search-close flex-center">
+                <i class="ri-close-fill"></i>
+                <!-- Icon to close the search modal -->
+              </a>
+
+              <!-- Search Icon (for visual indication) -->
+              <span class="large-icon">
+                <i class="ri-search-line"></i>
+              </span>
+
+              <!-- Search Input Field -->
+              <input type="search" placeholder="Search..." />
+              <!-- Placeholder text for search input -->
+
+              <!-- Submit Button for Search -->
+              <button type="submit">
+                Search
+                <!-- Text for the search button -->
+                <i class="ri-search-line"></i>
+                <!-- Icon for the search button -->
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== Scroll to Top ===================== -->
+
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup-icon"></i>
+        <!-- Icon for scroll-up button -->
+      </a>
+
+      <!-- ===================== Overlay ===================== -->
+
+      <div class="overlay"></div>
+      <!-- Overlay div to cover background when modal is active -->
+    </div>
+
+    <!-- ===================== Scroll to Top Functionality in JS ===================== -->
+
+    <script>
+      // Function to handle scroll-to-top button visibility
+      function scrollUp() {
+        const scrollUp = document.getElementById("scroll-up"); // Select the scroll-up button element
+        // If the scroll position is more than or equal to 200px from the top of the page
+        if (this.scrollY >= 200) {
+          scrollUp.classList.add("show-scroll"); // Show the scroll-up button
+        } else {
+          scrollUp.classList.remove("show-scroll"); // Hide the scroll-up button
+        }
+      }
+
+      // Listen for the scroll event to trigger the scrollUp function
+      window.addEventListener("scroll", scrollUp);
+    </script>
+
+    <!-- ===================== Swiper JS (For image carousels or slideshows) ===================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS for sliders -->
+
+    <!-- ===================== FSLightbox JS (For image/video lightbox functionality) ===================== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.js"></script>
+    <!-- FSLightbox JS for lightbox modals -->
+
+    <!-- ===================== Custom JavaScript File ===================== -->
+
+    <script src="/assets/JS/main.js"></script>
+    <!-- Custom JavaScript file for additional website functionality -->
+  </body>
+</html>
